@@ -1,7 +1,7 @@
 
 You should create one application using CRA. After the application is created do next steps:
-1. to install [redux package](https://www.npmjs.com/package/redux). 
-2. to configure [redux dev tools](https://github.com/reduxjs/redux-devtools)
+- [ ] to install [redux package](https://www.npmjs.com/package/redux). 
+- [ ] to configure [redux dev tools](https://github.com/reduxjs/redux-devtools)
 
 You don't have to implemenent any UI but if yu wish to do it you can as well.
 The purpose is to implement a reducer which supports next actions:
