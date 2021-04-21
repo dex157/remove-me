@@ -22,9 +22,9 @@ The purpose is to implement a reducer which supports next actions:
 { type: "CREDIT", payload: 2.0 }
 
 /**
- * Should return amount after tax
+ * Should return amount in which TAX is deducted
  */
-{ type: "GET_BALANCE_WITHOUT_TAX" }
+{ type: "GET_BALANCE_WITHOUT_TAX", payload: 13.0 }
 ```
 
 List of actions which will be passed to dispatch
