@@ -24,7 +24,7 @@ The purpose is to implement a reducer which supports next actions:
 /**
  * Should return amount in which TAX is deducted
  */
-{ type: "GET_BALANCE_WITHOUT_TAX", payload: 13.0 }
+{ type: "GET_BALANCE_WITH_TAX", payload: 14.0 }
 ```
 
 List of actions which will be passed to dispatch
