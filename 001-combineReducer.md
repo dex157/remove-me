@@ -1,5 +1,5 @@
 
-rom lesson we already have implementation of function which is `createStore`. 
+From lesson we already have implementation of function which is `createStore`. 
 Codesandbox can be forked.
 
 The task is to implement `combineReducer` function which should match to `https://redux.js.org/api/combinereducers`.
