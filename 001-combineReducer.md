@@ -1,6 +1,6 @@
 
 From lesson we already have implementation of function which is `createStore`. 
-Codesandbox can be forked.
+Codesandbox can be forked. [Link](https://codesandbox.io/s/001-redux-pi4jj?file=/src/redux.ts)
 
 The task is to implement `combineReducer` function which should match to `https://redux.js.org/api/combinereducers`.
 
