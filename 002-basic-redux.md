@@ -7,7 +7,8 @@ You don't have to implemenent any UI but if yu wish to do it you can as well.
 The purpose is to implement a reducer which supports next actions:
 ```
 /**
- * Should plus payload amount to balance
+ * Should set a new amount to balance. 
+ * Should replace current balance if balance is defined
  */
 { type: "UPDATE_BALANCE", payload: amount }
 
