@@ -13,5 +13,9 @@ const app = combineReducer({
 const appStore = createStore(app);
 ```
 
-Expected: 
-The reducer counter2 should have diffenent actions type name and they should be dispatched after counter's actions.
+Expected result:
+- Your `combineReuducer` should work as original function from library. 
+- The reducer counter2 should have diffenent actions type name and they should be dispatched after counter's actions.
+
+How to test:
+Your function can be replaced by original and everything should work as well.
