@@ -1,14 +1,15 @@
-You should create one application using CRA or not. After the application is created do next steps:
-- [ ] to install [redux package](https://www.npmjs.com/package/redux). 
-- [ ] to configure [redux dev tools](https://github.com/reduxjs/redux-devtools)
+You should create one application using CRA or not. After you create the application, do the following steps:
+- [ ] install [redux package](https://www.npmjs.com/package/redux). 
+- [ ] configure [redux dev tools](https://github.com/reduxjs/redux-devtools)
 
-You don't have to implemenent any UI but if yu wish to do it you can as well.
-The state of a store should be next and could be a number type:
+
+You don't have to implement any UI, but you can do it if you wish.
+The state might have a number type, and you should create it with the following code:
 ```
 const balance = createStore(__YOUR_REDUCER__);
 ```
 
-List of actions which will be passed to dispatch
+List of actions you should create:
 ```
 const array = [
     { type: "UPDATE_BALANCE", payload: 1000.0 },
@@ -27,7 +28,7 @@ const array = [
 | `SET_BALANCE_WITH_TAX` | `number` | Should set a new amount of the balance in which TAX is deducted |
 | `DEBIT` | `number` | Should subtract payload amount from balance |
 
-It will be checked inly using redux dev tools where I am able to see list of actions.
+It will be checked only using redux dev tools where I am able to see list of actions.
 
 Example:
 ```
@@ -36,4 +37,16 @@ balance.dispatch({ type: "UPDATE_BALANCE", payload: 1000.0 }); // balance = 1000
 balance.dispatch({ type: "CREDIT", payload: 200.0 }); // 800.0
 balance.dispatch({ type: "DEBIT", payload: 50.0 }); // 850.0
 balance.dispatch({ type: "SET_BALANCE_WITH_TAX" payload: 14.0 }); // 850.0 * (1 - 0.14) = 731 
+```
+Also, you need to publish your homework with dev tools:
+```
+import { createStore, compose } from "redux";
+
+declare global {
+  interface Window {
+    __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
+  }
+}
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(rootReducer, undefined, composeEnhancers());
 ```
